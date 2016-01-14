@@ -1,6 +1,6 @@
 require('espower-babel')({
   cwd: process.cwd(),
-  pattern: 'tmp/test/**/*-test.js',
+  pattern: '.tmp/test/**/*-test.js',
   espowerOptions: {
     patterns: [
       'assert(value, [message])',
