@@ -29,8 +29,9 @@
     "url": "https://github.com/bouzuya/typescript-boilerplate"
   },
   "scripts": {
-    "build": "tsc && npm run build-es2015",
+    "build": "npm run build-ts && npm run build-es2015",
     "build-es2015": "babel --presets es2015 --out-dir lib/ .tmp/src/",
+    "build-ts": "tsc",
     "clean": "rm -rf lib/ .tmp/",
     "prepublish": "typings install && npm run clean && npm run build",
     "start": "node examples/index.js",
