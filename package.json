@@ -17,8 +17,8 @@
     "espower-babel": "^4.0.1",
     "mocha": "^2.3.4",
     "power-assert": "^1.2.0",
-    "tsd": "^0.6.5",
-    "typescript": "^1.7.5"
+    "typescript": "^1.7.5",
+    "typings": "^0.6.3"
   },
   "homepage": "https://github.com/bouzuya/typescript-boilerplate#readme",
   "keywords": [],
@@ -32,7 +32,7 @@
     "build": "tsc && npm run build-es2015",
     "build-es2015": "babel --presets es2015 --out-dir lib/ .tmp/src/",
     "clean": "rm -rf lib/ .tmp/",
-    "prepublish": "tsd reinstall && npm run clean && npm run build",
+    "prepublish": "typings install && npm run clean && npm run build",
     "start": "node examples/index.js",
     "test": "npm run clean && tsc && mocha --require test/espower-babel-loader.js .tmp/test/"
   }
