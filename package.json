@@ -33,7 +33,7 @@
     "build-es2015": "babel --presets es2015 --out-dir .tmp/es5/ .tmp/es2015/",
     "build-ts": "tsc",
     "clean": "rm -rf lib/ .tmp/",
-    "copy-to-lib": "cp -r .tmp/es5/ lib/",
+    "copy-to-lib": "cp -r .tmp/es5/src/ lib/",
     "prepublish": "typings install && npm run clean && npm run build",
     "start": "node examples/index.js",
     "test": "npm run build && mocha --require intelli-espower-loader .tmp/es5/test/"
