@@ -22,7 +22,7 @@
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^2.3.4",
     "npm-run-all": "3.0.0",
-    "power-assert": "^1.2.0",
+    "power-assert": "1.4.1",
     "proxyquire": "1.7.10",
     "rimraf": "2.5.4",
     "sinon": "1.17.5",
