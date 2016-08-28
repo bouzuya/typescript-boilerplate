@@ -11,14 +11,15 @@
     "url": "https://github.com/bouzuya/typescript-boilerplate/issues"
   },
   "devDependencies": {
+    "@types/node": "6.0.38",
+    "@types/power-assert": "0.0.27",
     "babel-cli": "^6.3.17",
     "babel-preset-es2015": "^6.3.13",
     "espower-babel": "^4.0.1",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^2.3.4",
     "power-assert": "^1.2.0",
-    "typescript": "2.0.0",
-    "typings": "^0.6.3"
+    "typescript": "2.0.0"
   },
   "homepage": "https://github.com/bouzuya/typescript-boilerplate#readme",
   "keywords": [],
@@ -34,7 +35,7 @@
     "build-ts": "tsc",
     "clean": "rm -rf lib/ .tmp/",
     "copy-to-lib": "cp -r .tmp/es5/src/ lib/",
-    "prepublish": "typings install && npm run clean && npm run build",
+    "prepublish": "npm run clean && npm run build",
     "start": "node examples/index.js",
     "test": "npm run build && mocha --require intelli-espower-loader .tmp/es5/test/"
   }
