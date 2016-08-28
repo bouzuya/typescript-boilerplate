@@ -43,7 +43,7 @@
   "homepage": "https://github.com/bouzuya/<REPO>#readme",
   "keywords": [],
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/bouzuya/<REPO>"
