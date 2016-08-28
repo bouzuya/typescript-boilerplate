@@ -22,6 +22,7 @@
     "mocha": "^2.3.4",
     "power-assert": "^1.2.0",
     "proxyquire": "1.7.10",
+    "rimraf": "2.5.4",
     "sinon": "1.17.5",
     "typescript": "2.0.0"
   },
@@ -37,7 +38,7 @@
     "build": "npm run build-ts && npm run build-es2015 && npm run copy-to-lib",
     "build-es2015": "babel --presets es2015 --out-dir .tmp/es5/ .tmp/es2015/",
     "build-ts": "tsc",
-    "clean": "rm -rf lib/ .tmp/",
+    "clean": "rimraf .tmp lib",
     "copy-to-lib": "cp -r .tmp/es5/src/ lib/",
     "prepublish": "npm run clean && npm run build",
     "start": "node examples/index.js",
