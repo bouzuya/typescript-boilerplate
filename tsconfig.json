@@ -1,16 +1,23 @@
 {
   "compilerOptions": {
-    "declaration": false,
-    "module": "es2015",
-    "target": "es2015",
+    "declaration": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
-    "outDir": ".tmp/es2015/",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./.tmp/es2015/",
+    "removeComments": true,
     "rootDir": ".",
-    "sourceMap": false
+    "sourceMap": false,
+    "strictNullChecks": true,
+    "target": "es2015"
   },
   "files": [
     "./src/index.ts",
-    "./test/add-test.ts",
-    "./typings/main.d.ts"
+    "./test/index.ts"
   ]
 }
