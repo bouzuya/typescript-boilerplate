@@ -20,6 +20,7 @@
     "espower-babel": "^4.0.1",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^2.3.4",
+    "npm-run-all": "3.0.0",
     "power-assert": "^1.2.0",
     "proxyquire": "1.7.10",
     "rimraf": "2.5.4",
@@ -35,13 +36,13 @@
     "url": "https://github.com/bouzuya/typescript-boilerplate"
   },
   "scripts": {
-    "build": "npm run build-ts && npm run build-es2015 && npm run copy-to-lib",
+    "build": "npm-run-all 'build-ts' 'build-es2015' 'copy-to-lib'",
     "build-es2015": "babel --presets es2015 --out-dir .tmp/es5/ .tmp/es2015/",
     "build-ts": "tsc",
     "clean": "rimraf .tmp lib",
     "copy-to-lib": "cp -r .tmp/es5/src/ lib/",
-    "prepublish": "npm run clean && npm run build",
+    "prepublish": "npm-run-all 'clean' 'build'",
     "start": "node examples/index.js",
-    "test": "npm run build && mocha --require intelli-espower-loader .tmp/es5/test/"
+    "test": "mocha --require intelli-espower-loader .tmp/es5/test/"
   }
 }
