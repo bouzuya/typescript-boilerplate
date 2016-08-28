@@ -1,6 +1,6 @@
 {
   "name": "typescript-boilerplate",
-  "description": "typescript-boilerplate",
+  "description": "<DESCRIPTION>",
   "version": "0.1.0",
   "author": {
     "name": "bouzuya",
@@ -19,7 +19,7 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/bouzuya/typescript-boilerplate/issues"
+    "url": "https://github.com/bouzuya/<REPO>/issues"
   },
   "devDependencies": {
     "@types/node": "6.0.38",
@@ -40,13 +40,13 @@
     "typescript": "2.0.0",
     "watch": "0.19.2"
   },
-  "homepage": "https://github.com/bouzuya/typescript-boilerplate#readme",
+  "homepage": "https://github.com/bouzuya/<REPO>#readme",
   "keywords": [],
   "license": "MIT",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bouzuya/typescript-boilerplate"
+    "url": "https://github.com/bouzuya/<REPO>"
   },
   "scripts": {
     "build": "npm-run-all -s 'build:ts' 'build:es2015' -p 'copy:*'",
