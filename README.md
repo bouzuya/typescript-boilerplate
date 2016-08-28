@@ -1,6 +1,6 @@
 # typescript-boilerplate
 
-typescript-boilerplate
+TypeScript project template for npm package.
 
 ## Badges
 
