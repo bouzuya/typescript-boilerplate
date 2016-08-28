@@ -16,7 +16,7 @@
     "@types/proxyquire": "1.3.26",
     "@types/sinon": "1.16.29",
     "babel-cli": "6.14.0",
-    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-es2015": "6.14.0",
     "cpx": "1.3.2",
     "espower-babel": "^4.0.1",
     "intelli-espower-loader": "^1.0.1",
