@@ -7,6 +7,17 @@
     "email": "m@bouzuya.net",
     "url": "http://bouzuya.net"
   },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "beater": {
+    "dir": "./.tmp/es5/test/",
+    "require": [
+      "./scripts/enable-power-assert.js"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/bouzuya/typescript-boilerplate/issues"
   },
@@ -17,10 +28,10 @@
     "@types/sinon": "1.16.29",
     "babel-cli": "6.14.0",
     "babel-preset-es2015": "6.14.0",
+    "beater": "0.4.1",
+    "beater-cli": "0.2.4",
     "cpx": "1.3.2",
-    "espower-babel": "^4.0.1",
-    "intelli-espower-loader": "^1.0.1",
-    "mocha": "^2.3.4",
+    "espower-loader": "1.0.1",
     "npm-run-all": "3.0.0",
     "power-assert": "1.4.1",
     "proxyquire": "1.7.10",
@@ -45,6 +56,6 @@
     "copy:js": "cpx '.tmp/es5/src/**/*.js' 'lib/'",
     "prepublish": "npm-run-all 'clean' 'build'",
     "start": "node examples/index.js",
-    "test": "mocha --require intelli-espower-loader .tmp/es5/test/"
+    "test": "beater"
   }
 }
