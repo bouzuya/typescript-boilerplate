@@ -2,6 +2,8 @@
 
 TypeScript project template for npm package.
 
+<DESCRIPTION>
+
 ## Badges
 
 [![Travis CI][travis-ci-badge]][travis-ci]
