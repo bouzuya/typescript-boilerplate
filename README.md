@@ -1,4 +1,4 @@
-# typescript-boilerplate
+# <REPO>
 
 TypeScript project template for npm package.
 
