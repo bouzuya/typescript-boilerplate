@@ -55,7 +55,7 @@
     "clean": "rimraf .tmp lib",
     "copy:dts": "cpx '.tmp/es2015/src/**/*.d.ts' 'lib/'",
     "copy:js": "cpx '.tmp/es5/src/**/*.js' 'lib/'",
-    "prepublish": "npm-run-all 'clean' 'build'",
+    "prepublish": "npm-run-all -s 'clean' 'build'",
     "start": "node examples/index.js",
     "test": "beater",
     "watch": "npm-run-all -p 'watch:*'",
