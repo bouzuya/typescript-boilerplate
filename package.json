@@ -39,7 +39,7 @@
     "sinon": "1.17.6",
     "tslint": "3.15.1",
     "typescript": "2.0.3",
-    "watch": "0.19.2"
+    "watch": "1.0.1"
   },
   "homepage": "https://github.com/bouzuya/<REPO>#readme",
   "keywords": [],
